@@ -1,0 +1,23 @@
+<!-- Content of admin.html: -->
+{{define "head"}}<title>index</title>{{end}}
+{{define "body"}}
+<p>
+	{{.}}
+</p> 
+<article>
+	<header>
+		<h2>{{.Meta.page_title}}</h2>
+	</header>
+	<div>
+		<p>1
+			{{.Meta.page_content}}
+		</p>
+<p style="color: red;">
+<!--{{with .}}-->
+    {{ .TemplateFunctionTest "value1"}}
+<!--{{end}}-->
+</p>
+	</div>
+
+</article>
+{{end}}
